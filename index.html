@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cinema website</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./dist/css/main.min.css" />
+  </head>
+  <body>
+    <header class="header">
+      <a href="#" class="header__logo"
+        ><i class="fa-solid fa-film"></i> cinema.</a
+      >
+      <nav class="nav">
+        <div class="nav__dir">
+          <a href="#" class="nav__dir-link"
+            ><i class="fa-solid fa-location-pin"></i>choose your cinema</a
+          >
+          <a href="#login" class="nav__dir-link"
+            ><i class="fa-solid fa-user"></i>SignIn | SignUp</a
+          >
+        </div>
+
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a href="#preferences" class="nav__link"
+              ><span>preferences</span></a
+            >
+          </li>
+          <li class="nav__item">
+            <a href="#movies" class="nav__link"> <span>search movies</span> </a>
+          </li>
+          <li class="nav__item">
+            <a href="#categories" class="nav__link">
+              <span>select category</span></a
+            >
+          </li>
+          <li class="nav__item">
+            <a href="#slider" class="nav__link"> <span>last movies</span></a>
+          </li>
+          <li class="nav__item">
+            <a href="#login" class="nav__link"> <span>SignIn | SignUp</span></a>
+          </li>
+        </ul>
+
+        <button class="nav__btn">
+          <span class="nav__line nav__line--1"></span>
+          <span class="nav__line nav__line--2"></span>
+          <span class="nav__line nav__line--3"></span>
+        </button>
+      </nav>
+    </header>
+    <section class="home">
+      <video autoplay loop muted plays-inline class="home__video">
+        <source src="./dist/video/header-video.mp4" type="video/mp4" />
+      </video>
+      <div class="home__banner">
+        <h1 class="home__heading">
+          best place to spend time with your friends.
+        </h1>
+        <a href="#preferences" class="home__btn btn-animation">explore</a>
+      </div>
+      <a href="#preferences" class="header__arrow"
+        ><i class="fa-solid fa-angles-down"></i
+      ></a>
+    </section>
+    <main class="main">
+      <section id="preferences" class="preferences">
+        <h2 class="section-heading section-heading--absolute">
+          chose your preference
+        </h2>
+        <div class="preferences__left">
+          <h3 class="preferences__name">3d cinema</h3>
+          <button class="preferences__btn btn-animation">select</button>
+        </div>
+        <div class="preferences__right">
+          <h3 class="preferences__name">2d cinema</h3>
+          <button class="preferences__btn btn-animation">select</button>
+        </div>
+      </section>
+      <section id="movies" class="section-padding movies">
+        <div class="wrapper">
+          <h2 class="section-heading">
+            search for the movie you want to watch
+          </h2>
+          <form class="search">
+            <div class="search__input-box">
+              <input
+                class="search__input"
+                type="text"
+                placeholder="Search..."
+              />
+              <button class="search__close-btn">
+                <i class="fas fa-times"></i>
+              </button>
+              <button class="search__glass-btn search__glass-btn--mobile">
+                <i class="fa-solid fa-magnifying-glass"></i>
+              </button>
+            </div>
+          </form>
+          <button
+            type="submit"
+            class="search__glass-btn search__glass-btn--desktop"
+          >
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </button>
+          <div class="movies__container"></div>
+        </div>
+      </section>
+      <section id="categories" class="categories section-padding">
+        <div class="wrapper">
+          <h2 class="section-heading">
+            choose the category you are interested in
+          </h2>
+          <div class="categories__wrapper">
+            <div class="categories__category">
+              <img
+                src="./dist/images/preferences-1.jpg"
+                alt=""
+                class="categories__img"
+              />
+              <div class="categories__info">
+                <h3 class="categories__name">romantic films</h3>
+                <small class="categories__amount">89</small>
+              </div>
+              <button class="categories__btn btn-animation">choice</button>
+            </div>
+            <div class="categories__category">
+              <img
+                src="./dist/images/preferences-1.jpg"
+                alt=""
+                class="categories__img"
+              />
+              <div class="categories__info">
+                <h3 class="categories__name">romantic films</h3>
+                <small class="categories__amount">89</small>
+              </div>
+              <button class="categories__btn btn-animation">choice</button>
+            </div>
+            <div class="categories__category">
+              <img
+                src="./dist/images/preferences-1.jpg"
+                alt=""
+                class="categories__img"
+              />
+              <div class="categories__info">
+                <h3 class="categories__name">romantic films</h3>
+                <small class="categories__amount">89</small>
+              </div>
+              <button class="categories__btn btn-animation">choice</button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="slider" class="slider">
+        <div class="slider__container">
+          <div class="slider__left">
+            <div class="slider__left-part slider__left-part--1">
+              <div class="slider__banner">
+                <h3 class="slider__name">Lorem, ipsum dolor.</h3>
+                <p class="slider__info">Lorem, ipsum.</p>
+              </div>
+            </div>
+            <div class="slider__left-part slider__left-part--2">
+              <div class="slider__banner">
+                <h3 class="slider__name">Lorem, ipsum dolor.</h3>
+                <p class="slider__info">Lorem, ipsum.</p>
+              </div>
+            </div>
+            <div class="slider__left-part slider__left-part--3">
+              <div class="slider__banner">
+                <h3 class="slider__name">Lorem, ipsum dolor.</h3>
+                <p class="slider__info">Lorem, ipsum.</p>
+              </div>
+            </div>
+            <div class="slider__left-part slider__left-part--4">
+              <div class="slider__banner">
+                <h3 class="slider__name">Lorem, ipsum dolor.</h3>
+                <p class="slider__info">Lorem, ipsum.</p>
+              </div>
+            </div>
+          </div>
+          <div class="slider__right">
+            <div class="slider__img slider__img--1"></div>
+            <div class="slider__img slider__img--2"></div>
+            <div class="slider__img slider__img--3"></div>
+            <div class="slider__img slider__img--4"></div>
+          </div>
+          <div class="slider__buttons">
+            <button class="slider__btn slider__btn--up btn-animation">
+              <i class="fas fa-arrow-up"></i>
+            </button>
+            <button class="slider__btn slider__btn--down btn-animation">
+              <i class="fas fa-arrow-down"></i>
+            </button>
+          </div>
+        </div>
+      </section>
+    </main>
+    <section id="login" class="login section-padding">
+      <div class="wrapper">
+        <h2 class="section-heading">login | registration</h2>
+        <div class="login__wrapper">
+          <div class="login__buttons">
+            <button class="login__btn login__btn--signin btn-animation">sign in</button>
+            <button class="login__btn login__btn--signup btn-animation">sign up</button>
+          </div>
+          <form class="form">
+            <div class="form__input-box">
+              <label for="username" class="form__label">username:</label>
+              <input
+                id="username"
+                type="text"
+                class="form__input"
+                placeholder="Enter your username..."
+              />
+              <p class="form__message">error</p>
+            </div>
+            <div class="form__input-box">
+              <label for="email" class="form__label">email:</label>
+              <input
+                id="email"
+                type="email"
+                class="form__input"
+                placeholder="Enter your email..."
+              />
+              <p class="form__message">error</p>
+            </div>
+            <div class="form__input-box">
+              <label for="password" class="form__label">password</label>
+              <input
+                id="password"
+                type="text"
+                class="form__input"
+                placeholder="Enter your password..."
+              />
+              <p class="form__message">error</p>
+            </div>
+            <div class="form__input-box">
+              <label for="password2" class="form__label"
+                >confirm password</label
+              >
+              <input
+                id="password2"
+                type="text"
+                class="form__input"
+                placeholder="Confirm your password..."
+              />
+              <p class="form__message">error</p>
+            </div>
+            <button class="form__btn btn-animation" type="submit">submit</button>
+          </form>
+        </div>
+      </div>
+    </section>
+    <footer class="footer">
+      <ul class="footer__nav">
+        <li class="footer__item">
+          <a href="#preferences" class="footer__link"><span>preferences</span></a>
+        </li>
+        <li class="footer__item">
+          <a href="#movies" class="footer__link"> <span>search movies</span> </a>
+        </li>
+        <li class="footer__item">
+          <a href="#categories" class="footer__link">
+            <span>select category</span></a
+          >
+        </li>
+        <li class="footer__item">
+          <a href="#slider" class="footer__link"> <span>last movies</span></a>
+        </li>
+        <li class="footer__item">
+          <a href="#login" class="footer__link"> <span>SignIn | SignUp</span></a>
+        </li>
+      </ul>
+    </footer>
+
+    <script src="./dist/js/main.min.js"></script>
+  </body>
+</html>

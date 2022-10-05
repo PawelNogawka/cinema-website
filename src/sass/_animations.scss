@@ -1,0 +1,46 @@
+@keyframes arrow {
+  from {
+    transform: translateY(-160%);
+  }
+  to {
+    transform: translateY(160%);
+  }
+}
+
+@keyframes searchIconAnimation {
+  40% {
+    top: 40rem;
+    right: calc(50% + 16rem);
+    font-size: 25rem;
+  }
+  60% {
+    font-size: 25rem;
+    right: calc(50% + 16rem);
+    top: 40rem;
+  }
+  100% {
+    font-size: 3rem;
+    right: calc(50% + 13.2rem);
+    top: 13rem;
+  }
+}
+
+@keyframes searchIconAnimation2 {
+  from {
+    right: calc(50% + 13.2rem);
+    top: 17rem;
+  }
+
+  to {
+    top: 10.3rem;
+    right: 3rem;
+  }
+}
+
+.btn-animation {
+  transition: background-color 0.4s ease;
+
+  &:hover {
+    background-color: $dark-main;
+  }
+}

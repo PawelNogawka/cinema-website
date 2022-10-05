@@ -1,0 +1,35 @@
+$main-bg: #1d293e;
+$main-color: #7564e5;
+$dark-main: #262b50;
+$red: #fc1423;
+$green: #499612;
+$orange: #eab633;
+$blue-linaer: linear-gradient(
+  90deg,
+  rgba(8, 114, 133, 0.7) 100%,
+  rgba(13, 165, 211, 0.7) 100%
+);
+$blue-linaer-solid: linear-gradient(
+  90deg,
+  rgba(8, 114, 133, 1) 100%,
+  rgba(13, 165, 211, 1) 100%
+);
+$green-linaer: linear-gradient(
+  90deg,
+  rgba(11, 126, 72, 0.7) 100%,
+  rgba(59, 226, 134, 0.7) 100%
+);
+$green-linaer-solid: linear-gradient(
+  90deg,
+  rgba(11, 126, 72, 1) 100%,
+  rgba(59, 226, 134, 1) 100%
+);
+
+$purple-linaer-solid: linear-gradient(to top, #5f72bd 0%, #9b23ea 100%);
+$red-linaer-solid-1: linear-gradient(135deg, #feb692 10%, #ea5455 100%);
+$red-linear-solid-2: linear-gradient(
+  to right,
+  #d31027 0%,
+  #ea384d 51%,
+  #d31027 100%
+);
